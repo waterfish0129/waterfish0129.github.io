@@ -9,155 +9,110 @@
     <title>Document</title>
 </head>
 <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Noto Sans TC', sans-serif;
-    }
     body {
-      background-color: #1e1e2f;
-      color: #f0f0f0;
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
       line-height: 1.6;
     }
-    header {
-      background-color: #2d2d44;
-      padding: 1.5rem;
+    header, footer {
+      background-color: #222;
+      color: #fff;
       text-align: center;
+      padding: 1.5rem;
     }
     header h1 {
-      font-size: 2.5rem;
-      color: #ffca28;
+      font-size: 2.2rem;
+      color: #ff9800;
     }
     nav {
-      background-color: #25253a;
       display: flex;
       justify-content: center;
-      padding: 1rem;
       gap: 2rem;
+      padding: 1rem;
+      background-color: #444;
     }
     nav a {
-      color: #f0f0f0;
+      color: white;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #ffca28;
+      text-decoration: underline;
     }
-    .hero {
-      padding: 3rem 1.5rem;
-      text-align: center;
-      background: url('https://images.unsplash.com/photo-1622443861967-3bba70fda9e5?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
-      color: white;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
+    main {
+      max-width: 960px;
       margin: auto;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+      padding: 2rem 1rem;
     }
-    .section {
-      padding: 2rem 1.5rem;
-      max-width: 900px;
-      margin: auto;
+    article {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: #fff;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 1.5rem;
+    article h2 {
+      color: #ff5722;
     }
-    .card {
-      background-color: #2d2d44;
-      padding: 1rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+    article p {
+      margin-top: 0.5rem;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: #ffca28;
-    }
-    .card p {
-      font-size: 0.95rem;
-    }
-    footer {
-      background-color: #2d2d44;
-      text-align: center;
-      padding: 1rem;
+    footer p {
       font-size: 0.9rem;
-      margin-top: 3rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>GameVerse 遊戲世界</h1>
+    <h1>GameVerse 遊戲攻略與心得網</h1>
+    <p>原創內容 × 玩家經驗 × 深度攻略</p>
   </header>
 
   <nav>
-    <a href="#news">最新消息</a>
-    <a href="#reviews">遊戲評論</a>
-    <a href="#features">特色專題</a>
+    <a href="#guides">遊戲攻略</a>
+    <a href="#reviews">玩家心得</a>
+    <a href="#tips">遊戲技巧</a>
   </nav>
 
-  <section class="hero">
-    <h2>探索最新與最熱門的遊戲宇宙</h2>
-    <p>從獨立遊戲到 3A 大作，我們提供您最全面、最深入的遊戲世界導覽。</p>
-  </section>
+  <main>
+    <section id="guides">
+      <article>
+        <h2>《艾爾登法環》全區域攻略（2025 最新整理）</h2>
+        <p>本攻略詳細列出每個地區的頭目位置、隱藏寶物與強化路線。包含高效率升級方式、武器搭配推薦與前期資源蒐集技巧，協助新手與進階玩家順利闖關。</p>
+      </article>
+      <article>
+        <h2>《薩爾達傳說 王國之淚》10 個實用小技巧</h2>
+        <p>從省耐力跑酷技巧，到快速合成裝備與隱藏神廟位置揭露，這篇文章專為想提升效率與探索樂趣的玩家設計。</p>
+      </article>
+    </section>
 
-  <section class="section" id="news">
-    <h2>🎮 最新遊戲消息</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>《幻境探險》正式上市</h3>
-        <p>奇幻風格 RPG《幻境探險》於今日正式推出，支援多平台同步發售。</p>
-      </div>
-      <div class="card">
-        <h3>Switch 推出全新 OLED 型號</h3>
-        <p>任天堂宣布新型號 OLED Switch 將於下月開賣，螢幕色彩表現更上一層樓。</p>
-      </div>
-    </div>
-  </section>
+    <section id="reviews">
+      <article>
+        <h2>玩家心得：為什麼《星空》讓我沉迷了 100 小時？</h2>
+        <p>這不只是另一款太空遊戲。從角色塑造到任務自由度，分享我在星空中的沉浸體驗，以及哪些設計讓人願意一玩再玩。</p>
+      </article>
+      <article>
+        <h2>老玩家眼中的《魔物獵人 崛起》</h2>
+        <p>作為從初代就開始玩的老獵人，這篇文章將比較歷代變化、招式進化，以及《崛起》在動作與養成上的突破。</p>
+      </article>
+    </section>
 
-  <section class="section" id="reviews">
-    <h2>🌟 遊戲評論精選</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>《時空交錯》— 9.5 / 10</h3>
-        <p>一款結合懸疑與解謎的敘事型遊戲，劇情張力十足，畫面表現精緻。</p>
-      </div>
-      <div class="card">
-        <h3>《極限狂飆》— 8.7 / 10</h3>
-        <p>刺激的競速體驗，加上自訂車輛系統，適合所有喜歡快感的玩家！</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="features">
-    <h2>🧩 特色專題</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>2025 最受期待遊戲 Top 5</h3>
-        <p>從《星際遠征》到《魔界重生》，你不能錯過的 2025 大作一次看。</p>
-      </div>
-      <div class="card">
-        <h3>遊戲音樂的魅力</h3>
-        <p>探討遊戲中配樂如何帶動情緒與劇情，從老遊戲到新世代。</p>
-      </div>
-    </div>
-  </section>
+    <section id="tips">
+      <article>
+        <h2>如何選擇適合你的遊戲類型？</h2>
+        <p>透過「玩家類型測驗」，你可以快速了解自己偏好的是策略、RPG、射擊還是模擬遊戲。本篇提供簡易範例幫助你找到最適合的遊戲風格。</p>
+      </article>
+      <article>
+        <h2>Steam 折扣季購買指南</h2>
+        <p>每年兩次的 Steam 折扣季是省錢好時機！我們精選推薦值得入手的遊戲，並分享查看歷史價格與防踩雷的方法。</p>
+      </article>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 
+    <p>&copy; 2025 GameVerse 遊戲攻略與心得網. 所有內容均為原創，未經同意請勿轉載。</p>
   </footer>
 </body>
 </html>
